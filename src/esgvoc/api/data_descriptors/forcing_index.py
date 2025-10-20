@@ -11,9 +11,7 @@ class ForcingIndex(PatternTermDataDescriptor):
 
     Examples: "f1", "f2", "f23"
 
-    This label distinguishes runs conforming to the experiment protocol,
-    but with different variants of forcing applied.
-    This can be used, for example, to distinguish between two historical simulations,
+    This label can be used, for example, to distinguish between two historical simulations,
     one forced with the recommended forcing data sets
     and another forced by a different dataset,
     which might yield information about how forcing uncertainty affects the simulation.
