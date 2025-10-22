@@ -1,3 +1,7 @@
+"""
+Model (i.e. schema/definition) of the variable data descriptor
+"""
+
 from pydantic import Field
 
 from esgvoc.api.data_descriptors.data_descriptor import PlainTermDataDescriptor
