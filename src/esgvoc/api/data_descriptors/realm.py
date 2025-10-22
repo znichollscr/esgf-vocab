@@ -17,3 +17,10 @@ class Realm(PlainTermDataDescriptor):
 
     # TODO: delete? redundant with description and drs_name
     name: str
+
+    # TODO: discuss. Karl had written,
+    # "Note that "realm" may be assigned multiple realms, "
+    # "separated by a single space, with the first one listed considered primary."
+    # Can we not do this and just have single values please?
+    # Otherwise this becomes a composite term,
+    # which just feels annoying/overkill.
