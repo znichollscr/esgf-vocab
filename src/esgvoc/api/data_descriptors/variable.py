@@ -30,6 +30,10 @@ class Variable(PlainTermDataDescriptor):
     Since CMIP7, the concept of a variable has been augmented with the idea of 'branding',
     leading to the idea of a 'branded variable'.
     For details, see :py:class:`BrandedVariable`.
+
+    Sometimes 'variable' is also referred to as 'root name' or 'out name'.
+    There is mostly a one to one mapping between CF standard names and variables.
+    However, this is not always possible so please don't assume this is always the case.
     """
 
     validation_method: str = Field(default="list")
