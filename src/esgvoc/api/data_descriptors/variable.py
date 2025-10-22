@@ -30,6 +30,7 @@ class Variable(PlainTermDataDescriptor):
 
     validation_method: str = Field(default="list")
     # TODO: discuss, what is this?
+    # Why is the default a list given the type is str?
 
     long_name: str
     """
