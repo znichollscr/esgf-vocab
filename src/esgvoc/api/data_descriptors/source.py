@@ -11,6 +11,8 @@ from esgvoc.api.data_descriptors.data_descriptor import PlainTermDataDescriptor
 from esgvoc.api.data_descriptors.organisation import Organisation
 
 
+# TODO: strip down to minimal set as advised by Matt
+# see https://github.com/ESGF/esgf-vocab/pull/51#issuecomment-3432513075
 class Source(PlainTermDataDescriptor):
     """
     Source of the dataset
