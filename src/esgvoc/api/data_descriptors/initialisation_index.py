@@ -5,6 +5,7 @@ Model (i.e. schema/definition) of the initialisation index data descriptor
 from esgvoc.api.data_descriptors.data_descriptor import PatternTermDataDescriptor
 
 
+# TODO: check spelling c/f InitializationIndex
 class InitialisationIndex(PatternTermDataDescriptor):
     r"""
     Label that identifies the initialisation variant used to produce a dataset

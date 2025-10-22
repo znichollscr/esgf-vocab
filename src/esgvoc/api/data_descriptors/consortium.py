@@ -1,3 +1,10 @@
+"""
+Model (i.e. schema/definition) of the consortium descriptor
+"""
+# TODO: clean this up.
+# It feels like the whole consortium institution organisation
+# architecture is based on CMOR tables, rather than being thought through from scratch.
+
 from pydantic import Field
 
 from esgvoc.api.data_descriptors.data_descriptor import ConfiguredBaseModel, PlainTermDataDescriptor
