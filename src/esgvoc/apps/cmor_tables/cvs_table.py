@@ -128,9 +128,11 @@ class CMORFrequencyDefinition(BaseModel):
     CMOR frequency definition
     """
 
-    approx_interval: float
+    approx_interval: float | None
     """
     Approximate interval in days
+
+    If `None`, the interval is not defined.
     """
 
     description: str
