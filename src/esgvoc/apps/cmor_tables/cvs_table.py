@@ -723,7 +723,7 @@ def get_cmor_frequency_definitions(
             description=v.description,
             approx_interval=get_approx_interval(v.interval, units=v.units),
         )
-        if v.interval
+        if v.units
         # I'm still not convinced that it wouldn't be simpler to use the same schema for all types
         else "fixed (time invariant) field"
         for v in terms
