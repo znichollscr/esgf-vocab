@@ -619,7 +619,10 @@ def get_cmor_license_definition(
     return res
 
 
-def get_approx_interval(interval: float, units: str) -> float:
+def get_approx_interval(interval: float | None, units: str) -> float | None:
+    if interval is None:
+        return None
+
     try:
         import pint
 
