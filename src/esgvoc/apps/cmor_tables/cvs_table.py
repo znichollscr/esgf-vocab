@@ -714,7 +714,9 @@ def get_cmor_source_id_definitions(
 
 
 def get_cmor_frequency_definitions(
-    source_collection: str, ev_project: ev_api.project_specs.ProjectSpecs
+    source_collection: str,
+    ev_project: ev_api.project_specs.ProjectSpecs,
+    string_definition_terms: tuple[str, ...] = ("fx",),
 ) -> dict[str, CMORFrequencyDefinition]:
     terms = ev_api.get_all_terms_in_collection(ev_project.project_id, source_collection)
 
@@ -723,9 +725,9 @@ def get_cmor_frequency_definitions(
             description=v.description,
             approx_interval=get_approx_interval(v.interval, units=v.units),
         )
-        if v.units
+        if v.drs_name in string_definition_terms
         # I'm still not convinced that it wouldn't be simpler to use the same schema for all types
-        else "fixed (time invariant) field"
+        else v.description
         for v in terms
     }
 
