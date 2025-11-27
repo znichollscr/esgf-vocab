@@ -730,7 +730,7 @@ def get_cmor_frequency_definitions(
             description=v.description,
             approx_interval=get_approx_interval(v.interval, units=v.units),
         )
-        if v.drs_name in string_definition_terms
+        if v.drs_name not in string_definition_terms
         # I'm still not convinced that it wouldn't be simpler to use the same schema for all types
         else v.description
         for v in terms
